@@ -1,0 +1,61 @@
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    first.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        home.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git add home.txt
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git rm first.txt
+rm 'first.txt'
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    first.txt -> home.txt
+
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git commit -m "rename first.txt to home.txt"
+[master ed5513b] rename first.txt to home.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename first.txt => home.txt (100%)
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git mv second.txt pudding.txt
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git mv pudding.txt LoveNote/patty.txt
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    second.txt -> LoveNote/patty.txt
+
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git commit -m "renamed file and put in LoveNote folder"
+[master 4141b21] renamed file and put in LoveNote folder
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename second.txt => LoveNote/patty.txt (100%)
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$

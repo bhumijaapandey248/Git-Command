@@ -1,0 +1,21 @@
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git rm third.txt
+rm 'third.txt'
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    third.txt
+
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git commit -m "this is the point in time where we deleted the third.txt"
+[master 343542d] this is the point in time where we deleted the third.txt
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 third.txt
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$

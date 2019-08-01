@@ -1,0 +1,170 @@
+
+VAIO@RANJANA MINGW64 ~
+$ cd ~
+
+VAIO@RANJANA MINGW64 ~
+$ pwd
+/c/Users/VAIO
+
+VAIO@RANJANA MINGW64 ~
+$ cd Desktop
+
+VAIO@RANJANA MINGW64 ~/Desktop
+$ cd SchoolWebsite
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/VAIO/Desktop/SchoolWebsite/.git/
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   web/debug.log
+
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite (master)
+$ cd web
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   debug.log
+
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ git add .
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ git commit -m "this is the very first commit"
+[master af1e4e7] this is the very first commit
+ 1 file changed, 1 insertion(+)
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ sit status
+bash: sit: command not found
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+        modified:   register.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ git commit -am "Cleaned up the HTML comments"
+[master 2107e6b] Cleaned up the HTML comments
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ git checkout -- index.html
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   debug.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ git add debug.log
+warning: LF will be replaced by CRLF in web/debug.log.
+The file will have its original line endings in your working directory
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   debug.log
+
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ git reset HEAD debug.log
+Unstaged changes after reset:
+M       web/debug.log
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   debug.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ git log
+commit 2107e6b210d6ef9daf50333a07ec3963bc707abb (HEAD -> master)
+Author: Bhumisha <Bhumisha@gmail.com>
+Date:   Thu Aug 1 10:36:25 2019 +0530
+
+    Cleaned up the HTML comments
+
+commit af1e4e768f377ef791e37bc75930d08476ad78f6
+Author: Bhumisha <Bhumisha@gmail.com>
+Date:   Thu Aug 1 10:30:56 2019 +0530
+
+    this is the very first commit
+
+commit 86709da5b1408e21fc6cdde14810a42be5f18129
+Author: Bhumisha <Bhumisha@gmail.com>
+Date:   Wed Jul 31 11:38:07 2019 +0530
+
+    added up the HTML comments
+
+commit c42f5d8382f998712f7169b3356ee14b28923bc5
+Author: Bhumisha <Bhumisha@gmail.com>
+Date:   Wed Jul 31 11:24:53 2019 +0530
+
+    this is the very first commit
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ git checkout 86709d -- index.html
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   debug.log
+
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+$ git commit -am "Unding kevins mistake"
+warning: LF will be replaced by CRLF in web/debug.log.
+The file will have its original line endings in your working directory
+[master e1b3987] Unding kevins mistake
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+VAIO@RANJANA MINGW64 ~/Desktop/SchoolWebsite/web (master)
+

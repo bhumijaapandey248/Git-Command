@@ -1,0 +1,417 @@
+
+VAIO@RANJANA MINGW64 ~
+$ git config --global user.name "Bhumisha"
+
+VAIO@RANJANA MINGW64 ~
+$ git config --global user.email "Bhumisha@gmail.com"
+
+VAIO@RANJANA MINGW64 ~
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=manager
+user.name=Bhumisha
+user.email=Bhumisha@gmail.com
+
+VAIO@RANJANA MINGW64 ~
+$ git congif user.name
+git: 'congif' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+VAIO@RANJANA MINGW64 ~
+$ git user.name
+git: 'user.name' is not a git command. See 'git --help'.
+
+VAIO@RANJANA MINGW64 ~
+$ git config user.name
+Bhumisha
+
+VAIO@RANJANA MINGW64 ~
+$ git help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout    Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+VAIO@RANJANA MINGW64 ~
+$ git help commit
+/usr/bin/start: line 8: cmd: command not found
+
+VAIO@RANJANA MINGW64 ~
+$ git help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout    Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+VAIO@RANJANA MINGW64 ~
+$ git help commit
+/usr/bin/start: line 8: cmd: command not found
+
+VAIO@RANJANA MINGW64 ~
+$ git help commit
+/usr/bin/start: line 8: cmd: command not found
+
+VAIO@RANJANA MINGW64 ~
+$ pwd
+/c/Users/VAIO
+
+VAIO@RANJANA MINGW64 ~
+$ cd ~
+
+VAIO@RANJANA MINGW64 ~
+$ pwd
+/c/Users/VAIO
+
+VAIO@RANJANA MINGW64 ~
+$ cd ..
+
+VAIO@RANJANA MINGW64 /c/Users
+$ ls
+ Administrator/   Default/         desktop.ini   Public/
+'All Users'@     'Default User'@   Guest/        VAIO/
+
+VAIO@RANJANA MINGW64 /c/Users
+$ pwd
+/c/Users
+
+VAIO@RANJANA MINGW64 /c/Users
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+VAIO@RANJANA MINGW64 /c/Users
+$ ls
+ Administrator/   Default/         desktop.ini   Public/
+'All Users'@     'Default User'@   Guest/        VAIO/
+
+VAIO@RANJANA MINGW64 /c/Users
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+VAIO@RANJANA MINGW64 /c/Users
+$ cd Tuna
+bash: cd: Tuna: No such file or directory
+
+VAIO@RANJANA MINGW64 /c/Users
+$ cd Tuna
+bash: cd: Tuna: No such file or directory
+
+VAIO@RANJANA MINGW64 /c/Users
+$ pwd
+/c/Users
+
+VAIO@RANJANA MINGW64 /c/Users
+$ ls
+ Administrator/   Default/         desktop.ini   Public/
+'All Users'@     'Default User'@   Guest/        VAIO/
+
+VAIO@RANJANA MINGW64 /c/Users
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+VAIO@RANJANA MINGW64 /c/Users
+$ cd Tuna
+bash: cd: Tuna: No such file or directory
+
+VAIO@RANJANA MINGW64 /c/Users
+$ pwd
+/c/Users
+
+VAIO@RANJANA MINGW64 /c/Users
+$ cd ~
+
+VAIO@RANJANA MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ javascript/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{97e1de87-d6fa-11e1-be62-94c0340a1222}.TM.blf
+ NTUSER.DAT{97e1de87-d6fa-11e1-be62-94c0340a1222}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{97e1de87-d6fa-11e1-be62-94c0340a1222}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ script1
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+
+VAIO@RANJANA MINGW64 ~
+$ cd Desktop
+
+VAIO@RANJANA MINGW64 ~/Desktop
+$ cd tuna
+
+VAIO@RANJANA MINGW64 ~/Desktop/tuna
+$ cd ..
+
+VAIO@RANJANA MINGW64 ~/Desktop
+$ cd Tuna
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna
+$ pwd
+/c/Users/VAIO/Desktop/Tuna
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna
+$ ls
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna
+$ git init
+Initialized empty Git repository in C:/Users/VAIO/Desktop/Tuna/.git/
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ pwd
+/c/Users/VAIO/Desktop/Tuna
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ ls
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ ls -la
+total 24
+drwxr-xr-x 1 VAIO 197121 0 Jul 26 20:37 ./
+drwxr-xr-x 1 VAIO 197121 0 Jul 26 20:27 ../
+drwxr-xr-x 1 VAIO 197121 0 Jul 26 20:37 .git/
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git add .
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git commit -m "This is our first commit"
+[master (root-commit) e30916e] This is our first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 first.txt
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git log
+commit e30916e7d02daf62e5301e03f108821c539bcb14 (HEAD -> master)
+Author: Bhumisha <Bhumisha@gmail.com>
+Date:   Fri Jul 26 20:48:29 2019 +0530
+
+    This is our first commit
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git log --author="Bhumi"
+commit e30916e7d02daf62e5301e03f108821c539bcb14 (HEAD -> master)
+Author: Bhumisha <Bhumisha@gmail.com>
+Date:   Fri Jul 26 20:48:29 2019 +0530
+
+    This is our first commit
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git log --author="Manya"
+
+VAIO@RANJANA MINGW64 ~/Desktop/tuna (master)
+$ git log
+commit e30916e7d02daf62e5301e03f108821c539bcb14 (HEAD -> master)
+Author: Bhumisha <Bhumisha@gmail.com>
+Date:   Fri Jul 26 20:48:29 2019 +0530
+
+    This is our first commit
+
+VAIO@RANJANA MINGW64 ~/Desktop/tuna (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+VAIO@RANJANA MINGW64 ~/Desktop/tuna (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        second.txt
+        third.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+VAIO@RANJANA MINGW64 ~/Desktop/tuna (master)
+$ git add second.txt
+
+VAIO@RANJANA MINGW64 ~/Desktop/tuna (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   second.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        third.txt
+
+
+VAIO@RANJANA MINGW64 ~/Desktop/tuna (master)
+$ git commit -m "adding the second file to the repository"
+[master b60c00f] adding the second file to the repository
+ 1 file changed, 1 insertion(+)
+ create mode 100644 second.txt
+
+VAIO@RANJANA MINGW64 ~/Desktop/tuna (master)
+$ git log
+commit b60c00f1440e38b8a3eb7d44dea00e5e206a25ec (HEAD -> master)
+Author: Bhumisha <Bhumisha@gmail.com>
+Date:   Tue Jul 30 10:50:43 2019 +0530
+
+    adding the second file to the repository
+
+commit e30916e7d02daf62e5301e03f108821c539bcb14
+Author: Bhumisha <Bhumisha@gmail.com>
+Date:   Fri Jul 26 20:48:29 2019 +0530
+
+    This is our first commit
+
+VAIO@RANJANA MINGW64 ~/Desktop/tuna (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        third.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+VAIO@RANJANA MINGW64 ~/Desktop/tuna (master)
+$ git add third.txt
+
+VAIO@RANJANA MINGW64 ~/Desktop/tuna (master)
+$ git commit -m "the third file is now joining its frnds"
+[master 7b72bae] the third file is now joining its frnds
+ 1 file changed, 1 insertion(+)
+ create mode 100644 third.txt
+
+VAIO@RANJANA MINGW64 ~/Desktop/tuna (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+VAIO@RANJANA MINGW64 ~/Desktop/tuna (master)
+$ git log
+commit 7b72bae8b89ab23367c865f3bdb75dd7109c54df (HEAD -> master)
+Author: Bhumisha <Bhumisha@gmail.com>
+Date:   Tue Jul 30 10:52:47 2019 +0530
+
+    the third file is now joining its frnds
+
+commit b60c00f1440e38b8a3eb7d44dea00e5e206a25ec
+Author: Bhumisha <Bhumisha@gmail.com>
+Date:   Tue Jul 30 10:50:43 2019 +0530
+
+    adding the second file to the repository
+
+commit e30916e7d02daf62e5301e03f108821c539bcb14
+Author: Bhumisha <Bhumisha@gmail.com>
+Date:   Fri Jul 26 20:48:29 2019 +0530
+
+    This is our first commit

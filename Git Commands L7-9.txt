@@ -1,0 +1,286 @@
+
+VAIO@RANJANA MINGW64 ~
+$ cd ~
+
+VAIO@RANJANA MINGW64 ~
+$ pwd
+/c/Users/VAIO
+
+VAIO@RANJANA MINGW64 ~
+$ cd ..
+
+VAIO@RANJANA MINGW64 /c/Users
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+VAIO@RANJANA MINGW64 /c/Users
+$ ls
+ Administrator/   Default/         desktop.ini   Public/
+'All Users'@     'Default User'@   Guest/        VAIO/
+
+VAIO@RANJANA MINGW64 /c/Users
+$ pwd
+/c/Users
+
+VAIO@RANJANA MINGW64 /c/Users
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+VAIO@RANJANA MINGW64 /c/Users
+$ pwd
+/c/Users
+
+VAIO@RANJANA MINGW64 /c/Users
+$ cd ~
+
+VAIO@RANJANA MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ javascript/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{97e1de87-d6fa-11e1-be62-94c0340a1222}.TM.blf
+ NTUSER.DAT{97e1de87-d6fa-11e1-be62-94c0340a1222}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{97e1de87-d6fa-11e1-be62-94c0340a1222}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ script1
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+
+VAIO@RANJANA MINGW64 ~
+$ cd Desktop
+
+VAIO@RANJANA MINGW64 ~/Desktop
+$ cd Tuna
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ cd ..
+
+VAIO@RANJANA MINGW64 ~/Desktop
+$ cd Tuna
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ pwd
+/c/Users/VAIO/Desktop/Tuna
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git add first.txt
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   first.txt
+
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git commit -m "modified the first file"
+[master a13cbd0] modified the first file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   second.txt
+        modified:   third.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git add .
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   second.txt
+        modified:   third.txt
+
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git commit -m "this is how you can edit multiple files"
+[master 98fd0dc] this is how you can edit multiple files
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git diff
+diff --git a/first.txt b/first.txt
+index 8d9fbff..96c28d6 100644
+--- a/first.txt
++++ b/first.txt
+@@ -1 +1 @@
+-I am Ham some people call me Sam. This is our first commit.
+\ No newline at end of file
++Sam is best dude eva !
+\ No newline at end of file
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git add first.txt
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git commit -m "we are commiting our changes"
+[master 52509c9] we are commiting our changes
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git diff
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   second.txt
+        modified:   third.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git diff
+diff --git a/second.txt b/second.txt
+index a567706..8ba76f8 100644
+--- a/second.txt
++++ b/second.txt
+@@ -1 +1 @@
+-Changes to second.
+\ No newline at end of file
++These are changes to the second fileee
+\ No newline at end of file
+diff --git a/third.txt b/third.txt
+index 03c2c6d..ce3792b 100644
+--- a/third.txt
++++ b/third.txt
+@@ -1 +1 @@
+-Changes to third.
+\ No newline at end of file
++These are changes to the third fileee
+\ No newline at end of file
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git add .
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git commit -m "here are some awesome changes to 2 files"
+[master 5fb5a13] here are some awesome changes to 2 files
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git diff
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git diff
+diff --git a/first.txt b/first.txt
+index 96c28d6..fbd15c9 100644
+--- a/first.txt
++++ b/first.txt
+@@ -1 +1 @@
+-Sam is best dude eva !
+\ No newline at end of file
++Hamblaster
+\ No newline at end of file
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git add first.txt
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git diff
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git diff --stage
+error: invalid option: --stage
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git diff --staged
+diff --git a/first.txt b/first.txt
+index 96c28d6..fbd15c9 100644
+--- a/first.txt
++++ b/first.txt
+@@ -1 +1 @@
+-Sam is best dude eva !
+\ No newline at end of file
++Hamblaster
+\ No newline at end of file
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git commit -m "made some really dumb changes"
+[master 9758ab1] made some really dumb changes
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+VAIO@RANJANA MINGW64 ~/Desktop/Tuna (master)
